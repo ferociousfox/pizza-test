@@ -9,6 +9,37 @@
     <title>Hello!</title>
   </head>
   <body>
-    <h1>hello worl</h1>
+    <div class="container">
+      <h1>WELCOME TO THE PIZZA PLACE</h1>
+      <h2>put some pizza in your face!</h2>
+      <div class="form-group">
+          <label for="pizza">Select a Size</label>
+          <select class="form-control" id="pizza-size">
+            <option value="0" selected>Select an option below.</option>
+            <option value="small">small 10"</option>
+            <option value="medium">medium 14"</option>
+            <option value="large">large 18"</option>
+          </select>
+        </div><!--size selector-->
+        <label for="pizza">Select toppings</label>
+        <select class="form-control" id="pizza-topping">
+          <option value="0" selected>Select an option below.</option>
+          <option value="1">simple - 1 topping</option>
+          <option value="4">average - up to 4 toppings </option>
+          <option value="5">complicated - 5 or more toppings</option>
+        </select>
+      </div><!--topping selector-->
+      <!-- <div class="form-group">
+       <label for="toppings-list">name your toppings</label>
+       <input type="text" class="form-control" id="listed-topping">
+      </div> -->
+      <button id="button" type="button" name="button">Submit Your Order</button>
+      <div id="pizza-selection">
+        <p>Congrats! You have purchased the following:</p>
+        <ul id="your-pizza">
+
+        </ul>
+      </div>
+    </div> <!--container end-->
   </body>
 </html>
